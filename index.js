@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 	let counter = 0;
 	let interValID = setInterval(() => {
 		counter++;
-		if (counter >= 10) {
+		if (counter >= 1000) {
 			clearInterval(interValID);
 			res.end();
 			return;
